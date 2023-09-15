@@ -1,0 +1,12 @@
+.app {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: min-content 6.5rem 6.5rem auto;
+  row-gap: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .app {
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,62 @@
+.tabLink {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  justify-self: center;
+  color: var(--color-gray);
+  font-family: var(--main-font);
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+.tabLink a {
+  padding: 0 1.6rem 1.2rem 1.6rem;
+  border-bottom: 4px solid var(--color-white);
+  cursor: pointer;
+}
+
+a.activeTab {
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+@media only screen and (max-width: 1380px) {
+  .tabLink {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .tabLink {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .tabLink {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+
+  .tabLink a {
+    padding: 0 1rem 1.2rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tabLink {
+    grid-column: 1 / -1;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .tabLink {
+    width: 28rem;
+    overflow-y: scroll;
+  }
+  .tabLink div {
+    width: 50rem;
+  }
+}

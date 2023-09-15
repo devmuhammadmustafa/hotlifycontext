@@ -1,0 +1,41 @@
+.header {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  padding: 1.5rem;
+}
+
+.header a {
+  position: relative;
+  color: var(--color-white);
+}
+
+.header a span {
+  display: inline-block;
+  font-size: 6.9rem;
+  font-weight: 400;
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
+
+.header a div {
+  width: 6.7rem;
+  height: 4.8rem;
+  position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    grid-column: 1 / 2;
+    padding: 0;
+  }
+
+  .header a span {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header a span {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,28 @@
+.search {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  background-color: var(--color-white);
+  display: flex;
+}
+.search input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 3rem;
+  color: var(--color-input);
+}
+
+.search button {
+  background: transparent;
+  padding: 1rem;
+}
+
+.search button img {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .search {
+    grid-column: 1 / -1;
+  }
+}

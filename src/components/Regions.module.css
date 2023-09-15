@@ -1,0 +1,17 @@
+.regions {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 12.1rem);
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .regions {
+    grid-column: 1 / -1;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

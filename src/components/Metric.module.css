@@ -1,0 +1,24 @@
+.metric {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  justify-self: center;
+}
+
+.toggle {
+  margin: 0 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .toggle {
+    margin: 0 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .metric {
+    grid-column: 2 / -1;
+    grid-row: 1 / 1;
+    justify-self: end;
+    align-self: center;
+  }
+}
